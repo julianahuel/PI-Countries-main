@@ -1,0 +1,25 @@
+.input{
+    text-align-last: center;
+    border-radius: 12px;
+    font-size: 25px;
+    font-family: -webkit-pictograph;
+    background-color: rgb(77, 80, 102);
+}
+
+.input:hover{
+    background-color: rgb(66, 68, 92);
+}
+.button{
+    border-radius:20px;
+    font-size: 20px;
+    background-color: rgba(240, 216, 1, 0.863);
+    transition: all 0.3s ease 0s;
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    color:rgb(93, 37, 145);
+    background-color:rgba(107, 98, 2, 0.87);
+}
+

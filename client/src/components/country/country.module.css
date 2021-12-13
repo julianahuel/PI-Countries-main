@@ -1,0 +1,27 @@
+.card {
+    height: 400px;
+    width: 350px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -3rem 0 5rem #000;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin:5px;
+    position: relative;
+    cursor: pointer;
+    padding: 1.5rem;
+    justify-content: center;
+  }
+  .subr{
+      text-decoration: none;
+      color: rgb(179, 179, 179);
+      margin:25px;
+  }
+  .card:hover{
+    transform: translateY(-1rem);
+  } 
+  
+  

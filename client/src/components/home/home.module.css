@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #060425;
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+.title{
+    font-size: 50px;
+    margin-right: 90px;
+    color: aliceblue;
+    margin-bottom: -20px;
+    text-decoration: overline;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto; 
+    grid-gap: 0.5rem;
+    padding: 10px 30px;
+    margin: 20px 150px
+}
+
+.reload{
+    background-color:rgb(80, 80, 80);
+    width:45px;
+    height: 43px;
+    cursor:pointer;
+    border-radius: 20px;
+    margin-left:47%;
+}
