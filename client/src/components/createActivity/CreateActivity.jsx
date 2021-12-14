@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {Link, useHistory} from 'react-router-dom'
 import { createActivity, getCountries } from '../../actions'
 import style from './create.module.css'
+import swal from 'sweetalert'
 
 export default function Form() {
     const dispatch = useDispatch()
@@ -16,7 +17,6 @@ export default function Form() {
       season: '',
       countries: [],
     })
-  const copyD= details
     useEffect(() => {
       dispatch(getCountries())
     }, [dispatch])
@@ -36,9 +36,7 @@ export default function Form() {
     }
   
     function handleSubmit(e) {
-      if(copyD !== details){
-
-          e.preventDefault()
+        e.preventDefault()
         dispatch(createActivity(details))
         setDetails({
           name: '',
@@ -48,15 +46,19 @@ export default function Form() {
           countries: [],
         })
         history.push('./countries')
-        alert('Activity created!')
-      }else alert('you need complete it')
+        swal({
+          title: 'DONE!',
+          text: 'The activity was added',
+          icon: 'success',
+          button: 'Ok'
+        })
     }
   
     return (
       <div className={style.divform}>
         <div className={''}>
           <form className={style.form} key={countries.id} onSubmit={(e) => handleSubmit(e)}>
-            <h1 className={''}>Add Activities to the countries</h1>
+            <h1 className={''}>ADD ACTIVITIES TO THE COUNTRIES</h1>
             <div className={style.name}>
               <label htmlFor='name'>Name:</label>
               <input
@@ -65,7 +67,7 @@ export default function Form() {
                 name='name'
                 className={style.input}
                 onChange={(e) => handleChange(e)}
-                // required
+                required
               />
             </div>
   
@@ -127,7 +129,7 @@ export default function Form() {
                 className={style.input}
                 name='countries'
                 onChange={(e) => handleSelect(e)}
-                // required
+                required
               >
                 <option value=''>Countries...</option>
                 {countries.map((c) => (

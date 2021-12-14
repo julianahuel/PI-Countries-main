@@ -1,23 +1,26 @@
 .divform{
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 600px;
+    margin-top: 5%;
 }
 
 .form{
     display: flex;
     flex-direction: column;
-    padding: 100px;
-    height: 500px;
+    padding: 50px;
+    height: 600px;
     align-items: center;
     justify-content: space-evenly;
-    border:solid;
-    border-radius:30px;
+    border: solid;
+    border-radius: 30px;
     border-width: 10px;
 }
 h1{
-    color: rgb(68, 68, 68);
+    color: rgb(237, 252, 103);
+    margin-top: -2%;
+    TEXT-DECORATION: underline;
 }
 
 .name{
@@ -43,5 +46,6 @@ h1{
     cursor:pointer;
 }
 .button:hover{
-    background-color:rgb(21, 21, 75);
+    background-color:rgb(194, 247, 110);
+    color:black
 }

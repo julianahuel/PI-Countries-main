@@ -5,11 +5,13 @@ body {
     color: white;
     font-family: 'DM Mono', monospace;
 }
+
 .title{
     font-size: 50px;
     margin-right: 90px;
     color: aliceblue;
     margin-bottom: -20px;
+    margin-top: 20px;
     text-decoration: overline;
 }
 .cards {
