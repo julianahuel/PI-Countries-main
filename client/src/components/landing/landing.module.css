@@ -4,7 +4,7 @@
 }
 
 .button{
-    font-size: 60px;
+    font-size: 50px;
     border: none;
     color:rgb(53, 53, 53);
     border-radius: 25px;
@@ -19,8 +19,13 @@
     background-color:rgba(107, 98, 2, 0.87);
 }
 
-
 .containerButton{
-    margin-top: -30%;
+    margin-top: -40%;
     margin-left: 50%;
+}
+
+.h1{
+    font-size: 75px;
+    color: wheat;
+    font-family: unset;
 }

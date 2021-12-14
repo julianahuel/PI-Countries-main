@@ -14,12 +14,12 @@ router.get('/', async (req,res)=>{
             include: Activity
         })
         res.status(200).send(coun)
-        console.log('Lo encontre!')
+        // console.log('Lo encontre!')
     }
     else {
         const all = await Country.findAll({include: Activity})
         res.send(all)
-        console.log('Te paso todos porque no encontre el que me pediste')
+        // console.log('Te paso todos porque no encontre el que me pediste')
     }
     
 })

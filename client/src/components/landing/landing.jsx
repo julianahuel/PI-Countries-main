@@ -10,7 +10,8 @@ export default function Landing(){
                 <img className={style.image} alt='landing' src={landing}/>
             </div>
             <div className={style.containerButton}>
-                <Link to='/countries'><button className={style.button}>Let's ConGO!</button></Link>
+                <h1 className={style.h1}>Welcome to the Countries App</h1>
+                <Link to='/countries'><button className={style.button}>Let's go!</button></Link>
             </div>
         </div>
     )

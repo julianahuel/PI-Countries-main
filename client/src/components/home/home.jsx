@@ -69,6 +69,13 @@ export default function World (){
             <div className={style.reload} >
                 <img alt='reload' src='https://cdn0.iconfinder.com/data/icons/glyphpack/41/refresh-512.png' height={40}  onClick={(e)=>onClickChange(e)}/>
             </div>
+            <div>
+                <Paginado
+                charactersPerPage={charactersPerPage}
+                allCountries={allCountries.length}
+                paginado={paginado}
+                />
+            </div>
 
             <div className={style.cards}>
                 {Array.isArray(currentCharacter)
@@ -79,13 +86,6 @@ export default function World (){
                         {'Not countries found. Try again later'}
                     </h1>
                 }
-            </div>
-            <div>
-                <Paginado
-                charactersPerPage={charactersPerPage}
-                allCountries={allCountries.length}
-                paginado={paginado}
-                />
             </div>
         </div>
 

@@ -11,15 +11,8 @@ router.post('/', async (req,res)=>{
         const activity = await Activity.create({
             name, difficulty, duration, season
         })
-        // console.log(countries)
         countries.map(async c=> await activity.setCountries(await Country.findByPk(c)) )
-        // res.status(200).send(activity)
 
-        // console.log(countries, 'EL PAIS')
-        // const findOne = await Country.findAll({ where: {id:countries} })   
-        // console.log(findOne, 'EL VERDADERO PAIS')
-        // const added = await activity.addCountries(findOne)
-        
         res.status(200).json(countries)
     }
     catch(err) {console.log(err)}
