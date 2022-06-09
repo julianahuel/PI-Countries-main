@@ -6,6 +6,36 @@
     margin-top: 5%;
 }
 
+.homeLink{
+    /* text-decoration:none;
+    transition: all 0.3s ease 0s; */
+    text-decoration:none;
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+}
+.homeLink:hover{
+    color:rgb(86, 30, 139);
+}
+.homeLi{
+    /* display:inline-block;
+    padding: 0 60px; */
+    background-color: rgba(240, 216, 1, 0.863);
+    border-radius: 20px;
+    padding: 9px 10px;
+    transition: all 0.3s ease 0s;
+    display:inline-block;
+}
+.homeLi:hover{
+    background-color:rgba(107, 98, 2, 0.87);
+}
+
+.ul{
+    list-style: none;
+    padding: 0 100px;
+    font-size: 20px;
+}
+
 .form{
     display: flex;
     flex-direction: column;

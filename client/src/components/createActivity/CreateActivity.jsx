@@ -4,6 +4,7 @@ import {Link, useHistory} from 'react-router-dom'
 import { createActivity, getCountries } from '../../actions'
 import style from './create.module.css'
 import swal from 'sweetalert'
+import Buttons from '../buttons/buttonsHome'
 
 export default function Form() {
     const dispatch = useDispatch()
@@ -55,8 +56,12 @@ export default function Form() {
     }
   
     return (
+      
       <div className={style.divform}>
         <div className={''}>
+        <ul className={style.ul}>
+          <li className={style.homeLi}><Link className={style.homeLink} to='/countries' >Home</Link></li>
+        </ul>
           <form className={style.form} key={countries.id} onSubmit={(e) => handleSubmit(e)}>
             <h1 className={''}>ADD ACTIVITIES TO THE COUNTRIES</h1>
             <div className={style.name}>

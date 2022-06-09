@@ -35,7 +35,7 @@ const reducer = (state = initialState, action)=>{
             }
 
         case FILTER_BY_ACTIVITY:
-            const filterByActivity = action.payload === 'All' ?state.allCountries :state.allCountries.filter(c=> c.activities.filter(ac => ac.season === action.payload) )
+            const filterByActivity = action.payload === 'All' ?state.allCountries :state.allCountries.filter(c=> c.activities.some(ac => ac.season === action.payload) )
             return {
                 ...state,
                 country:filterByActivity

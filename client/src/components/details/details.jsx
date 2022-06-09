@@ -46,7 +46,7 @@ export function Details(){
                         <span className={style.titleAct}>Activities</span><br/>
                         {details?.activities?.length > 0 
                         ?details?.activities.map(ac => {
-                            return <div key={ac.id}>
+                            return <div key={ac.id} className={style.details}>
                                 <span>Name: {ac.name} </span>
                                 <br/> 
                                 <span>Duration: {ac.duration} </span>
@@ -56,7 +56,7 @@ export function Details(){
                                 <span>Difficulty: {ac.difficulty}/5 </span>
                             </div>
                         })
-                        : <span>There aren't activities</span>
+                        : <span>There isn't activity</span>
                         }
                     </h2>
                 </div>

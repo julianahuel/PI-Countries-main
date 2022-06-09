@@ -53,6 +53,9 @@
     color:yellow;
     text-decoration: underline;
 }
+.details{
+    font-size: 30px;
+}
 
 .buttonBack{
     border-radius:20px;

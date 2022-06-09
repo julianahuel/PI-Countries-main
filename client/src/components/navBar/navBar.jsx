@@ -3,6 +3,7 @@ import React from 'react'
 import style from './navBar.module.css'
 import Loaded from '../../imgs/Loaded.gif'
 import SearchBar from '../searchBar/searchBar'
+import Buttons from '../buttons/buttonsHome'
 
 export default function NavBar({ sort, contFilter, actFilter }){
 
@@ -26,7 +27,7 @@ export default function NavBar({ sort, contFilter, actFilter }){
                             <option value='Oceania'>Oceania</option>
                         </select>
 
-                        {/* filtro por estacion */}
+                        {/* filtro por actividad */}
                         <select className={style.filter} onChange={(e) => actFilter(e)}>
                             <option value='All'>Filter activities by season...</option>
                             <option value='Summer'>Summer</option>
@@ -45,10 +46,7 @@ export default function NavBar({ sort, contFilter, actFilter }){
                         </select>
                     </div>
                 </div>
-                <ul className={style.ul}>
-                    <li className={style.homeLi}><Link className={style.homeLink} to='/countries' >Home</Link></li>
-                    <li className={style.createLi}><Link className={style.createLink} to='/create'>Add Activity</Link></li>
-                </ul>
+                <Buttons/>
             </nav>
 
         </header>

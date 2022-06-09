@@ -1,0 +1,37 @@
+.homeLink{
+    text-decoration:none;
+    transition: all 0.3s ease 0s;
+}
+.homeLink:hover{
+    color:blueviolet;
+}
+.homeLi{
+    display:inline-block;
+    padding: 0 60px;
+}
+.createLink{
+    text-decoration:none;
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+}
+.createLi:hover{
+    color:blueviolet;
+
+}
+.createLi{
+    background-color: rgba(240, 216, 1, 0.863);
+    border-radius: 20px;
+    padding: 9px 10px;
+    transition: all 0.3s ease 0s;
+    display:inline-block;
+}
+.createLi:hover{
+    background-color:rgba(107, 98, 2, 0.87);
+}
+
+.ul{
+    list-style: none;
+    padding: 0 100px;
+
+}

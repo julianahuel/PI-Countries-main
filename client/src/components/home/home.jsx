@@ -62,9 +62,9 @@ export default function World (){
         <div className={style.home}>
             <h1 className={style.title}>Countries App</h1>
                 <NavBar
-                    sort={handleSort}
                     contFilter={handleContinentFilter}
                     actFilter={handleActivityFilter}
+                    sort={handleSort}
                 />
             <div className={style.reload} >
                 <img alt='reload' src='https://cdn0.iconfinder.com/data/icons/glyphpack/41/refresh-512.png' height={40}  onClick={(e)=>onClickChange(e)}/>
